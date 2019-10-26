@@ -4,6 +4,7 @@
     font-size: 1.125rem;
     font-weight: 300;
     line-height: 1.6;
+    font-display: fallback;
 }
 
 img {
@@ -13,19 +14,18 @@ img {
 
 /*Typography*/
 
+strong {
+    font-weight: 600;
+    color: #334d4d;
+}
 .fa-heart {
     color: #e60000;
 }
 
 a {
     text-decoration: none;
-    color: #00cccc;
+    color: #00e6e6;
 }
-
-    a:visited {
-        color: #008080;
-    }
-
 
 
 a:hover,
@@ -43,7 +43,7 @@ h1, h2, h3 {
 h4 {
     font-family: 'IBM Plex Serif', serif;
     font-weight: 400;
-    color: #00cccc;
+    color: #009999;
     margin-top: 2em;
     font-size: 1.25rem;
 }
@@ -89,10 +89,14 @@ footer a:visited {
     font-weight: 400;
 }
 
+.link-resources {
+    color: #cc3300;
+}
+
 /*H1 subtitle*/
 .subtitle {
     margin: 2em 0 0 1em;
-    color: #00cccc;
+    color: #fff;
     font-size: .75rem;
     font-weight: 700;
     text-transform: lowercase;
@@ -115,7 +119,7 @@ footer a:visited {
 
 
 .article-read-more {
-    color: #00cccc;
+    color: #334d4d;
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
@@ -186,10 +190,10 @@ hr {
 
 footer {
     text-align: center;
-    background: #008080;
+    background: #334d4d;
     color: #00cccc;
-    padding: 2em 0;
-    margin: 2em 0;
+    padding: 1.5em 0;
+    margin: 1em 0;
     text-transform: lowercase;
     font-family: 'IBM Plex Serif', serif;
 }
@@ -212,7 +216,7 @@ footer {
 /*Navigation*/
 
 header {
-    background: #b32d00;
+    background: #334d4d;
     padding: 2em 0;
     text-align: center;
     margin-bottom: 2em;
@@ -246,27 +250,25 @@ nav li {
 nav a {
     text-decoration: none;
     text-transform: lowercase;
-    color: #00cccc;
+    color: #fff;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     padding: .25em 0;
     font-weight: 700;
+    letter-spacing: 1.25px;
 }
 
     nav a:hover,
     nav a:focus {
-        color: #fff;
+        color: #00e6e6;
     }
 
-    nav a:visited {
-        color: #00cccc;
-    }
 .current-page {
-    border-bottom: 1px solid #008080;
+    border-bottom: 1px solid #00e6e6;
 }
 
     .current-page:hover {
-        color: #00cccc;
+        color: #00e6e6;
     }
 
 @media (max-width:675px) {
@@ -368,7 +370,7 @@ article {
 /*.sidebar-about,
 .sidebar-posts*/
 .sidebar-widget {
-    border: 5px solid #00cccc;
+    border: 5px solid #00e6e6;
     padding: 1em;
     margin-bottom: 2em;
     margin-left: 1em;
@@ -384,6 +386,10 @@ article {
     font-weight: 700;
     text-transform: uppercase;
 
+}
+
+.widget-body {
+    color: #334d4d;
 }
 
 .widget-recent-post {
@@ -413,5 +419,6 @@ p.resourcelist-body {
 }
 
 #social-icon {
-    color: #00cccc;
+    color: #00e6e6;
+    padding: .5em;
 }
